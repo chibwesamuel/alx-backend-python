@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""akes an integer max_delay and returns a asyncio.Task."""
+"""Makes an integer max_delay and returns a asyncio.Task."""
 
 import asyncio
 # Import wait_random function
@@ -7,8 +7,7 @@ from my_module import wait_random
 
 def task_wait_random(max_delay: int) -> asyncio.Task:
     """
-    Creates and returns an asyncio.Task that executes wait_random
-    with the specified max_delay.
+    Creates and returns an asyncio.Task that executes wait_random with the specified max_delay.
 
     Args:
         max_delay (int): The maximum delay value in seconds for wait_random.
