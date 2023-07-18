@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Makes an integer max_delay and returns a asyncio.Task."""
+"""Makes an integer max_delay and returns an asyncio.Task."""
 
 import asyncio
 # Import wait_random function
