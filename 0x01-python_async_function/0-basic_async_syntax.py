@@ -24,3 +24,4 @@ if __name__ == "__main__":
     print(asyncio.run(wait_random()))
     print(asyncio.run(wait_random(5)))
     print(asyncio.run(wait_random(15)))
+
