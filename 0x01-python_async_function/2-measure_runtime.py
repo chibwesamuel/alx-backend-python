@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 from 1-concurrent_coroutines import wait_n
 
