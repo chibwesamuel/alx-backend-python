@@ -10,6 +10,7 @@ import utils
 # Assuming you have the utils module with
 # access_nested_map and get_json functions implemented
 
+
 class TestAccessNestedMap(unittest.TestCase):
     """
     TestAccessNestedMap class that inherits from unittest.TestCase.
@@ -53,6 +54,7 @@ class TestAccessNestedMap(unittest.TestCase):
         with self.assertRaises(KeyError):
             utils.access_nested_map(nested_map, path)
 
+
 class TestGetJson(unittest.TestCase):
     """
     TestGetJson class that inherits from unittest.TestCase.
@@ -69,7 +71,8 @@ class TestGetJson(unittest.TestCase):
 
         Args:
             test_url (str): The URL to test the get_json function with.
-            test_payload (dict): The expected payload to be returned by get_json.
+            test_payload (dict): The expected payload to be returned by
+            get_json.
             mock_get (MagicMock): The patched mock for requests.get.
 
         Returns:
@@ -83,6 +86,7 @@ class TestGetJson(unittest.TestCase):
 
         mock_get.assert_called_once_with(test_url)
         self.assertEqual(result, test_payload)
+
 
 class TestMemoize(unittest.TestCase):
     """
@@ -110,7 +114,7 @@ class TestMemoize(unittest.TestCase):
             None.
         """
         instance = self.TestClass()
-        
+
         # Call the property twice
         result1 = instance.a_property
         result2 = instance.a_property
@@ -120,6 +124,7 @@ class TestMemoize(unittest.TestCase):
 
         # Ensure that the results are the same
         self.assertEqual(result1, result2)
+
 
 if __name__ == "__main__":
     unittest.main()
