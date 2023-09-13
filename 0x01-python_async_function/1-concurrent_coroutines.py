@@ -8,7 +8,8 @@ import datetime
 
 async def wait_random(max_delay: int) -> float:
     """
-    Asynchronous routine that waits for a random delay between 0 and max_delay.
+    Asynchronous routine that waits for a random delay between 0
+    and max_delay.
 
     Args:
         max_delay (int): The maximum delay value in seconds.
@@ -43,4 +44,3 @@ if __name__ == "__main__":
     asyncio.run(wait_n(5, 5))
     asyncio.run(wait_n(10, 7))
     asyncio.run(wait_n(10, 0))
-
