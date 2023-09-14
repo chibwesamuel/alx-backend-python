@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-
+"""
+Augments a code with the correct duck-typed annotations
+"""
 from typing import Sequence, Any, Union, Optional
+
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, Optional[None]]:
     """Return the first element of a list safely.
@@ -15,4 +18,3 @@ def safe_first_element(lst: Sequence[Any]) -> Union[Any, Optional[None]]:
         return lst[0]
     else:
         return None
-
